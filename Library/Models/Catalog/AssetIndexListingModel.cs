@@ -13,6 +13,6 @@ namespace Library.Models.Catalog
         public string AuthorOrDirector{ get; set; }
         public string Type{ get; set; }
         public string DeweyCallNumber{ get; set; }
-        public string NumberOfCopiess{ get; set; }
+        public int NumberOfCopies{ get; set; }
     }
 }

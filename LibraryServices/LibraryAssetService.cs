@@ -22,8 +22,9 @@ namespace LibraryServices
 
         public IEnumerable<LibraryAsset> GetAll()
         {
-            return _context.LibraryAssets.Include(Asset => Asset.Location)
+            var x = _context.LibraryAssets.Include(Asset => Asset.Location)
                 .Include(Asset => Asset.Status);
+            return x;
         }
 
         public string GetAuthorOrDirector(int id)
