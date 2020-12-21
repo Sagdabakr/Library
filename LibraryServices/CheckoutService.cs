@@ -118,7 +118,7 @@ namespace LibraryServices
             _context.SaveChanges();
         }
 
-        private void UpdateAssetStatus(int assetId, string v)
+        private void UpdateAssetStatus(int assetId, string status)
         {
             var asset = _context.LibraryAssets
                 .FirstOrDefault(asset => asset.Id == assetId);
