@@ -1,10 +1,10 @@
 ﻿@model Library.Models.Catalog.AssetDetailModel
 <div>
-    <div class="row">
-        <div class="DetailImage">
-            <img src="@Model.ImageUrl"/>
+    <div class="row"  style="background-color:lightgray ; display:inline " >
+        <div class="DetailImage"  >
+            <img src="@Model.ImageUrl" style="height:100px;width:100px "/>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4"  >
             <p>@Model.Title</p>
             <p>@Model.AuthorOrDirector</p>
             <p>@Model.Status</p>
